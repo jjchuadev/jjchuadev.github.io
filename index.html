@@ -24,10 +24,16 @@
     </div>
     <div id="navigation">
       <ul id="main-menu">
-       <li><a href="#about" class="slide-section">ABOUT ME</a></li> 
-       <li><a href="#skills" class="slide-section">SKILLS</a></li>
-       <li><a href="#experience" class="slide-section">EXPERIENCE</a></li>
-       <li><a href="#contact" class="slide-section">CONTACT</a></li>
+       <li><div id="aboutButton">ABOUT ME</div></li> 
+       <li><div id="skillsButton">SKILLS</div></li>
+       <li><div id="experienceButton">EXPERIENCE</div></li>
+       <li><div id="contactButton">CONTACT</div></li>
+<!--
+       <li><a href="#about">ABOUT ME</a></li> 
+       <li><a href="#skills">SKILLS</a></li>
+       <li><a href="#experience">EXPERIENCE</a></li>
+       <li><a href="#contact" >CONTACT</a></li>
+-->
       </ul>
     </div>
   </div>
@@ -35,7 +41,10 @@
    <div id="content">
 
      <div id="about" class="section">
-       <h1> ABOUT ME </h1>
+      
+       <div id=aboutHeader">
+         <h1> ABOUT ME </h1>
+       </div>
        <p>
          I am a fourth year Computer Science major at the University of California, Irvine.
        </p>
@@ -98,10 +107,20 @@
        
        <h1>CONTACT INFORMATION</h1>
        <div id="contactsList">
-         <span><h2>Email</h2></span>
+         <ul>
+           
+           <li><a href="jjchuadev@gmail.com">Email</a></li>
+           <li><a href="https://www.linkedin.com/in/johnjchua/">LinkedIn</a></li>
+           <li><a href="https://github.com/jjchuaUCI">GitHub</a></li>
+           <li><a href="/assets/resume.pdf">Resume</a></li>
+           
+         </ul>
+<!--
+         <span><h2><a href="jjchuadev@gmail.com">Email</a></h2></span>
          <span><h2><a href="https://www.linkedin.com/in/johnjchua/">LinkedIn</a></h2></span>
          <span><h2><a href="https://github.com/jjchuaUCI">GitHub</a></h2></span>
          <span><h2><a href="/assets/resume.pdf">Resume</a></h2></span>
+-->
        </div>
      </div>
      
@@ -109,8 +128,22 @@
 
 <!-- SCRIPTS -->
 
-<script src="js/jquery-3.2.1.js"></script>
-<script src="js/pagescroller.js"></script>
+<script src="/assets/js/jquery-3.2.1.js"></script>
+<script src="/assets/js/pagescroller.js"></script>
+<script src="/assets/js/contactlinks.js"></script>
+<script>
+window.onload = function()
+{
+    if (window.jQuery)
+    {
+        alert('jQuery is loaded');
+    }
+    else
+    {
+        alert('jQuery is not loaded');
+    }
+}
+</script>
 </body>
 
 </html>

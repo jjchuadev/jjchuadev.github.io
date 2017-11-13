@@ -1,15 +1,33 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
 
-"use strict";
+
 $(document).ready(function () {
   
-
-  $('slide-section').click(function(e) {
-    
-    alert('Clicked');
-    e.preventDefault();
-    
+  $("#aboutButton").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
+    }, 1000);
   });
+  
+  $("#skillsButton").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#skills").offset().top
+    }, 1000);
+  });
+  
+  $("#experienceButton").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#experience").offset().top
+    }, 1000);
+  });
+  
+  $("#contactButton").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 1000);
+  });
+  
+  
   
 });
