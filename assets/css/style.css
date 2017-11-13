@@ -1,0 +1,156 @@
+/*
+
+12
+
+#0B0C10
+#1F2833
+#C5C6C7
+#66FCF1
+#45A29E
+
+*/
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #1F2833;
+  margin: 0;
+}
+
+#sidenav {
+  margin: 0;
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background-color: #0B0C10;
+  border-left: 1px solid black;
+}
+
+#profile-pic {
+  width: 200px;
+  height: auto;
+  margin-top: 0;
+  margin: 0px 50px 0px 50px;
+  border-radius: 102.5px;
+  border: 5px solid #E8E8E8;
+}
+
+h1 {
+  color: #45A29E;
+}
+
+#info h1 {
+  text-align: center;
+  background-color: #0B0C10;
+  color: white;
+  font-weight: 500;
+}
+
+#navigation {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 75%;
+  left: 50%;
+  width: 300px;
+}
+
+#content {
+  margin-left: 300px;
+  width: auto;
+  position: relative;
+  overflow: auto;
+  z-index: -1;
+  padding: 25px;
+}
+
+#main-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  vertical-align: middle;
+}
+
+#main-menu li {
+  background-color: #1F2833;
+}
+
+#main-menu a{
+  display: block;
+  color: white;
+/*  color: #66FCF1;*/
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  width: auto;
+}
+
+#main-menu a:hover {
+  background-color: #C5C6C7;
+}
+
+#main-menu li+li {
+  border-top: 1px solid #0B0C10;
+}
+
+.section {
+  text-align: left;
+  color: #52658f;
+  margin: 25px;
+  padding: 20px;
+  top: 0;
+  background-color: #E8E8E8;
+}
+
+#about-me {
+
+}
+
+#experience {
+
+}
+
+#skills {
+
+}
+
+#languages {
+  margin: 0;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#languages span {
+  display: table-cell;
+  text-align: center;
+}
+
+#hobbiesList {
+  margin: 0;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#hobbiesList span {
+  display: table-cell;
+  text-align: center;
+}
+
+
+#contactsList {
+  margin: 0;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#contactsList span {
+  display: table-cell;
+  text-align: center;
+}
+
+
+#contact h1 {
+  text-align: left;
+}
+
