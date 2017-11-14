@@ -7,6 +7,7 @@
 <head>
  
   <title>John Chua</title>
+  <meta name="author" content="John Chua">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -18,7 +19,7 @@
  
   <div id="sidenav">
     <div id="info">
-<!--      <img src="profilepic.jpg" id="profile-pic">-->
+      <img src="/assets/pictures/profilepic.jpg" id="profile-pic">
       <h1>JOHN</h1>
       <h1>CHUA</h1>
     </div>
@@ -28,25 +29,24 @@
        <li><div id="skillsButton">SKILLS</div></li>
        <li><div id="experienceButton">EXPERIENCE</div></li>
        <li><div id="contactButton">CONTACT</div></li>
-<!--
-       <li><a href="#about">ABOUT ME</a></li> 
-       <li><a href="#skills">SKILLS</a></li>
-       <li><a href="#experience">EXPERIENCE</a></li>
-       <li><a href="#contact" >CONTACT</a></li>
--->
       </ul>
     </div>
   </div>
    
    <div id="content">
+     
 
      <div id="about" class="section">
       
        <div id="aboutHeader">
          <h1> ABOUT ME </h1>
        </div>
+       
+       <div id="mobileInfo">
+         <img src="/assets/pictures/profilepic.jpg" id="profile-pic">
+       </div>
        <p>
-         I am a fourth year Computer Science major at the University of California, Irvine.
+         Hi! My name is John Chua. I am a fourth year Computer Science major at the University of California, Irvine.
        </p>
        <p>
          I chose to become a computer sciene major because of my love for technology and computers. Back in my senior year of high school, I built my own desktop computer so that I could play video games and that sealed the deal for me. Even though I was interested in the hardware side at first, my full interest is now in programming and that has led me here!
@@ -54,12 +54,14 @@
        <h2>
          SOME OF MY HOBBIES INCLUDE:
        </h2>
-       <div id="hobbiesList">
-         <span><h2>Working Out</h2></span>
-         <span><h2>Volleyball</h2></span>
-         <span><h2>Basketball</h2></span>
-         <span><h2>Esports</h2></span>
-         <span><h2>Video Games</h2></span>
+       <div id="hobbiesList" class="alist">
+         <ul>
+           <li><h3>Working Out</h3></li>
+           <li><h3>Volleyball</h3></li>
+           <li><h3>Basketball</h3></li>
+           <li><h3>Esports</h3></li>
+           <li><h3>Video Games</h3></li>
+         </ul>
        </div>
     
      </div>
@@ -69,21 +71,25 @@
        <h2>
          PROGRAMMING LANGUAGES
        </h2>
-       <div id="languages">
-         <span><h3>Python</h3></span>
-         <span><h3>C++</h3></span>
-         <span><h3>Java</h3></span>
+       <div id="languages" class="alist">
+         <ul>
+           <li><h3>Python</h3></li>
+           <li><h3>C++</h3></li>
+           <li><h3>Java</h3></li>
+         </ul>
        </div>
        <h2>
          SOFTWARE
        </h2>
-       <ul class="mylist" id="software">
-         <li>HTML / CSS / JavaScript</li>
-         <li>MS Office Suite</li>
-         <li>Adobe Photoshop</li>
-         <li>Adobe After Effects</li>
-         <li>Sony Vegas</li>
-       </ul>
+       <div id="software" class="alist">
+         <ul >
+           <li><h3>HTML / CSS / JS</h3></li>
+           <li><h3>MS Office Suite</h3></li>
+           <li><h3>Adobe Photoshop</h3></li>
+           <li><h3>Adobe After Effects</h3></li>
+           <li><h3>Sony Vegas</h3></li>
+         </ul>
+       </div>
      </div>
      
      <div id="experience" class="section">
@@ -106,21 +112,13 @@
      <div id="contact" class="section">
        
        <h1>CONTACT INFORMATION</h1>
-       <div id="contactsList">
+       <div id="contactsList" class="alist">
          <ul>
-           
-           <li><a href="jjchuadev@gmail.com">Email</a></li>
+           <li><a href="mailto:jjchuadev@gmail.com">Email</a></li>
            <li><a href="https://www.linkedin.com/in/johnjchua/">LinkedIn</a></li>
            <li><a href="https://github.com/jjchuaUCI">GitHub</a></li>
-           <li><a href="/assets/resume.pdf">Resume</a></li>
-           
+           <li><a href="/assets/resume.pdf">Resume</a></li>  
          </ul>
-<!--
-         <span><h2><a href="jjchuadev@gmail.com">Email</a></h2></span>
-         <span><h2><a href="https://www.linkedin.com/in/johnjchua/">LinkedIn</a></h2></span>
-         <span><h2><a href="https://github.com/jjchuaUCI">GitHub</a></h2></span>
-         <span><h2><a href="/assets/resume.pdf">Resume</a></h2></span>
--->
        </div>
      </div>
      
@@ -131,19 +129,7 @@
 <script src="/assets/js/jquery-3.2.1.js"></script>
 <script src="/assets/js/pagescroller.js"></script>
 <script src="/assets/js/contactlinks.js"></script>
-<script>
-window.onload = function()
-{
-    if (window.jQuery)
-    {
-        alert('jQuery is loaded');
-    }
-    else
-    {
-        alert('jQuery is not loaded');
-    }
-}
-</script>
+
 </body>
 
 </html>

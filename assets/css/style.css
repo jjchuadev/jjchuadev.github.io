@@ -1,42 +1,245 @@
-/*
+/* DEFAULT STYLING */
 
-12
-
-#0B0C10
-#1F2833
-#C5C6C7
-#66FCF1
-#45A29E
-
-*/
-
-@aboutMeBG: 'https://coverfiles.alphacoders.com/421/42148.jpg';
+h1 {
+  color: #45A29E;
+}
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #1F2833;
+  background-color: #E8E8E8;
   margin: 0;
 }
 
-/*
-#about {
-  padding: 0;
+/* END OF DEFAULT STYLING */
+
+/* MOBILE */
+
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+
+/* TOP NAV */
+
+  #info {
+    display: none;
+  }
+  
+  #mobileInfo img {
+    width: 200px;
+    height: auto;
+    border-radius: 102.5px;
+    border: 5px solid #333;
+  }
+  
+  #sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #main-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    vertical-align: middle;
+  }
+  
+  #main-menu div:hover {
+    background-color: #C5C6C7;
+    cursor: pointer;
+  }
+  
+  #main-menu li {
+    float: right;
+  }
+  
+  #main-menu li div {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+/* end of top nav */
+  
+/* MAIN CONTENT STYLING */
+
+  #content {
+/*    margin-left: 300px;*/
+    width: auto;
+    position: relative;
+    overflow: auto;
+  }
+
+  .section {
+    text-align: left;
+    color: #52658f;
+    margin-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    top: 0;
+    background-color: #E8E8E8;
+  }
+
+  /* END OF MAIN CONTENT STYLING */
+  
+  /* CONTENT LIST STYLING */
+
+  .alist a, .alist h3 {
+    outline: none;
+    text-decoration: none;
+    margin-right: 1%;
+    text-align: center;
+    line-height: 3;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  .alist ul {
+    padding: 0;
+    width: 100%;
+  }
+  
+  .alist a {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .alist li {
+    display: inline;
+  }
+
+  .alist li:last-child a {
+    margin-right: 0;
+  }
+
+  /* END OF CONTENT LIST STYLING */
   
 }
 
+/* END OF MOBILE STYLING */
 
-#aboutHeader {
-  background: #fff url("https://coverfiles.alphacoders.com/421/42148.jpg") no-repeat;
-  height: 200px;
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: blur(2px);
+
+
+/*TABLET*/
+
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+
+/* TOP NAV */
+
+  #info {
+    display: none;
+  }
+  
+  #mobileInfo img {
+    width: 200px;
+    height: auto;
+    border-radius: 102.5px;
+    border: 5px solid #333;
+  }
+  
+  #sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #main-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    vertical-align: middle;
+  }
+  
+  #main-menu div:hover {
+    background-color: #C5C6C7;
+    cursor: pointer;
+  }
+  
+  #main-menu li {
+    float: right;
+  }
+  
+  #main-menu li div {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+/* end of top nav */
+  
+/* MAIN CONTENT STYLING */
+
+  #content {
+/*    margin-left: 300px;*/
+    width: auto;
+    position: relative;
+    overflow: auto;
+  }
+
+  .section {
+    text-align: left;
+    color: #52658f;
+    margin-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    top: 0;
+    background-color: #E8E8E8;
+  }
+
+  /* END OF MAIN CONTENT STYLING */
+  
+  /* CONTENT LIST STYLING */
+
+  .alist a, .alist h3 {
+    outline: none;
+    text-decoration: none;
+    margin-right: 1%;
+    text-align: center;
+    line-height: 3;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  .alist ul {
+    padding: 0;
+    width: 100%;
+  }
+  
+  .alist a {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .alist li {
+    display: inline;
+  }
+
+  .alist li:last-child a {
+    margin-right: 0;
+  }
+
+  /* END OF CONTENT LIST STYLING */
+
 }
-*/
+
+/* END OF TABLET STYLING */
 
 
+/*DESKTOP*/
+
+@media only screen  and (min-width : 1024px) {
+  
+#mobileInfo {
+  display: none;
+}
+
+/* SIDENAV STYLING */
 
 #sidenav {
   margin: 0;
@@ -45,43 +248,15 @@ body {
   height: 100%;
   background-color: #0B0C10;
   border-left: 1px solid black;
-}
-
-#profile-pic {
-  width: 200px;
-  height: auto;
-  margin-top: 0;
-  margin: 0px 50px 0px 50px;
-  border-radius: 102.5px;
-  border: 5px solid #E8E8E8;
-}
-
-h1 {
-  color: #45A29E;
-}
-
-#info h1 {
-  text-align: center;
-  background-color: #0B0C10;
-  color: white;
-  font-weight: 500;
+  z-index: 99;
 }
 
 #navigation {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 75%;
   left: 50%;
   width: 300px;
-}
-
-#content {
-  margin-left: 300px;
-  width: auto;
-  position: relative;
-  overflow: auto;
-/*  z-index: -1;*/
-/*  padding: 25px;*/
 }
 
 #main-menu {
@@ -91,14 +266,27 @@ h1 {
   vertical-align: middle;
 }
 
-#main-menu div {
-  background-color: #1F2833;
+#info h1 {
+  text-align: center;
+  background-color: #0B0C10;
+  color: white;
+  font-weight: 500;
+}
+
+#profile-pic {
+  width: 200px;
+  height: auto;
+  margin-top: 0;
+  margin: 50px 50px 0px 50px;
+  border-radius: 102.5px;
+  border: 5px solid #E8E8E8;
 }
 
 #main-menu div{
   display: block;
   color: white;
 /*  color: #66FCF1;*/
+  background-color: #1F2833;
   text-align: center;
   padding: 15px 20px;
   text-decoration: none;
@@ -114,94 +302,112 @@ h1 {
   border-top: 1px solid #0B0C10;
 }
 
+/* END OF SIDENAV STYLING */
+
+/* MAIN CONTENT STYLING */
+
+#content {
+  margin-left: 300px;
+  width: auto;
+  position: relative;
+  overflow: auto;
+}
+
 .section {
   text-align: left;
   color: #52658f;
   margin-bottom: 5px;
-  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
   top: 0;
   background-color: #E8E8E8;
+}
+
+/* END OF MAIN CONTENT STYLING */
+
+/* ABOUT SECTION */
+
+#about {
+  width: 100%:
+}
+
+#abouttext {
+  float: left;
+  width: 75%;
 }
 
 #about-me {
 
 }
 
-#experience {
-
+#hobbiesList h3 {
+  width: calc(18.3%);
 }
+
+/* END OF ABOUT SECTION */
+
+/* SKILLS SECTION */
 
 #skills {
 
 }
 
-#languages {
-  margin: 0;
-  display: table;
-  width: 100%;
-  table-layout: fixed;
+#languages h3 {
+  width: calc(31.6%);
 }
 
-#languages span {
-  display: table-cell;
-  text-align: center;
+#software h3 {
+  width: calc(18.3%);
 }
 
-#hobbiesList {
-  margin: 0;
-  display: table;
-  width: 100%;
-  table-layout: fixed;
+/* END OF SKILLS SECTION */
+
+/* EXPERIENCE SECTION */
+
+#experience {
+
 }
 
-#hobbiesList span {
-  display: table-cell;
-  text-align: center;
-}
+/* END OF EXPERIENCE SECTION */
 
-#contactsList ul {
-  padding: 0;
-  width: 100%;
-}
-
-#contactsList li {
-  display: inline;
-}
+/* CONTACT SECTION */
 
 #contactsList a {
-  outline: none;
-  text-decoration: none;
-  display: inline-block;
-  width: 24%;
-  margin-right: 1%;
-  text-align: center;
-  line-height: 3;
+  width: calc(23.5%);
 }
-
-#contactsList li:last-child a {
-  margin-right: 0;
-}
-
-/*
-#contactsList {
-  margin: 0;
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-}
-
-#contactsList span {
-  display: table-cell;
-  text-align: center;
-}
-
-#contactsList span:hover {
-  cursor: pointer;
-}
-*/
-
 
 #contact h1 {
   text-align: left;
 }
 
+/* END OF CONTACT SECTION */
+
+/* CONTENT LIST STYLING */
+
+.alist a, .alist h3 {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 1%;
+  text-align: center;
+  line-height: 3;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.alist ul {
+  padding: 0;
+  width: 100%;
+}
+
+.alist li {
+  display: inline;
+}
+
+.alist li:last-child a {
+  margin-right: 0;
+}
+
+/* END OF CONTENT LIST STYLING */
+  
+}
