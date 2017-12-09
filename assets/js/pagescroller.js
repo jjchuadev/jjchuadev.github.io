@@ -4,21 +4,28 @@
 
 $(document).ready(function () {
   
+  $("#homeButton").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#headerSec").offset().top
+    }, 1000);
+  });
+ 
+  
   $("#aboutButton").click(function() {
     $('html, body').animate({
         scrollTop: $("#about").offset().top
     }, 1000);
   });
   
-  $("#skillsButton").click(function() {
+  $("#educationButton").click(function() {
     $('html, body').animate({
-        scrollTop: $("#skills").offset().top
+        scrollTop: $("#education").offset().top
     }, 1000);
   });
   
-  $("#experienceButton").click(function() {
+  $("#projectsButton").click(function() {
     $('html, body').animate({
-        scrollTop: $("#experience").offset().top
+        scrollTop: $("#projects").offset().top
     }, 1000);
   });
   

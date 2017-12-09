@@ -1,413 +1,165 @@
 /* DEFAULT STYLING */
 
-h1 {
-  color: #45A29E;
-}
-
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  background-color: #E8E8E8;
-  margin: 0;
+	font-family: font92684;
+	/*San Francisco UI Display Light*/
+	margin: 0;
+	background-color: white;
 }
 
 /* END OF DEFAULT STYLING */
 
 /* MOBILE */
 
-@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
-
-/* TOP NAV */
-
-  #info {
-    display: none;
-  }
-  
-  #mobileInfo img {
-    width: 200px;
-    height: auto;
-    border-radius: 102.5px;
-    border: 5px solid #333;
-  }
-  
-  #sidenav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  #main-menu {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    vertical-align: middle;
-  }
-  
-  #main-menu div:hover {
-    background-color: #C5C6C7;
-    cursor: pointer;
-  }
-  
-  #main-menu li {
-    float: right;
-  }
-  
-  #main-menu li div {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-/* end of top nav */
-  
-/* MAIN CONTENT STYLING */
-
-  #content {
-/*    margin-left: 300px;*/
-    width: auto;
-    position: relative;
-    overflow: auto;
-  }
-
-  .section {
-    text-align: left;
-    color: #52658f;
-    margin-bottom: 5px;
-    padding-left: 25px;
-    padding-right: 25px;
-    top: 0;
-    background-color: #E8E8E8;
-  }
-
-  /* END OF MAIN CONTENT STYLING */
-  
-  /* CONTENT LIST STYLING */
-
-  .alist a, .alist h3 {
-    outline: none;
-    text-decoration: none;
-    margin-right: 1%;
-    text-align: center;
-    line-height: 3;
-    border: 2px solid black;
-    border-radius: 10px;
-  }
-
-  .alist ul {
-    padding: 0;
-    width: 100%;
-  }
-  
-  .alist a {
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  .alist li {
-    display: inline;
-  }
-
-  .alist li:last-child a {
-    margin-right: 0;
-  }
-
-  /* END OF CONTENT LIST STYLING */
-  
-}
+@media only screen and (max-width: 767px),
+only screen and (max-device-width: 767px) {}
 
 /* END OF MOBILE STYLING */
 
-
-
 /*TABLET*/
 
-@media only screen and (min-width : 768px) and (max-width : 1023px) {
-
-/* TOP NAV */
-
-  #info {
-    display: none;
-  }
-  
-  #mobileInfo img {
-    width: 200px;
-    height: auto;
-    border-radius: 102.5px;
-    border: 5px solid #333;
-  }
-  
-  #sidenav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  #main-menu {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    vertical-align: middle;
-  }
-  
-  #main-menu div:hover {
-    background-color: #C5C6C7;
-    cursor: pointer;
-  }
-  
-  #main-menu li {
-    float: right;
-  }
-  
-  #main-menu li div {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-/* end of top nav */
-  
-/* MAIN CONTENT STYLING */
-
-  #content {
-/*    margin-left: 300px;*/
-    width: auto;
-    position: relative;
-    overflow: auto;
-  }
-
-  .section {
-    text-align: left;
-    color: #52658f;
-    margin-bottom: 5px;
-    padding-left: 25px;
-    padding-right: 25px;
-    top: 0;
-    background-color: #E8E8E8;
-  }
-
-  /* END OF MAIN CONTENT STYLING */
-  
-  /* CONTENT LIST STYLING */
-
-  .alist a, .alist h3 {
-    outline: none;
-    text-decoration: none;
-    margin-right: 1%;
-    text-align: center;
-    line-height: 3;
-    border: 2px solid black;
-    border-radius: 10px;
-  }
-
-  .alist ul {
-    padding: 0;
-    width: 100%;
-  }
-  
-  .alist a {
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  .alist li {
-    display: inline;
-  }
-
-  .alist li:last-child a {
-    margin-right: 0;
-  }
-
-  /* END OF CONTENT LIST STYLING */
-
-}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {}
 
 /* END OF TABLET STYLING */
 
-
 /*DESKTOP*/
 
-@media only screen  and (min-width : 1024px) {
-  
-#mobileInfo {
-  display: none;
+@media only screen and (min-width: 1024px) {
+
+	/* TOP NAV CODE */
+
+	.navbar {
+		background: rgba(0, 0, 0, 0.8);
+		color: white;
+	}
+
+	/* END OF TOP NAV CODE */
+	/* HEADER CODE */
+	
+	.header {
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
+		margin: 0;
+	}
+	.header img {
+		width: 115%;
+		/*
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+*/
+		margin: -5px -100px -100px -100px;
+	}
+	.header h1 {
+		font-size: 400%;
+		top: 200px;
+		width: auto;
+		padding: 15px;
+		border-bottom: 5px solid white;
+		margin-bottom: 0;
+	}
+	.header h2 {
+		margin: 15px;
+		margin-bottom: 30px;
+	}
+	.headerText {
+		left: 50%;
+		top: 30%;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		position: absolute;
+		color: white;
+		text-align: center;
+		display: none;
+	}
+	.headerButton {
+		margin: 0;
+		-webkit-border-radius: 15;
+		-moz-border-radius: 15;
+		border-radius: 15px;
+		color: white;
+		font-size: 20px;
+		padding: 5px 10px 5px 10px;
+		border: solid white 2px;
+		text-decoration: none;
+		background: none;
+	}
+	.headerButton:hover {
+		cursor: pointer;
+		background: rgba(0, 0, 0, 0.2);
+		text-decoration: none;
+	}
+
+	/* END OF HEADER CODE */
+	/* infoSection CODE */
+	.infoSection {
+		display: block;
+		margin: 0;
+	}
+
+	/* END OF infoSection CODE */
+	/* ABOUT SECTION CODE */
+	#about {
+		text-align: center;
+		padding-top: 75px;
+		padding-left: 250px;
+		padding-right: 250px;
+		padding-bottom: 85px;
+	}
+	#about img {
+		height: 250px;
+		display: inline-block;
+		margin-top: 20px;
+		margin-bottom: 25px;
+	}
+
+	#about h1 {
+		margin-top: 10px;
+	}
+
+	/* END OF ABOUT SECTION CODE */
+	/* EDUCATION SECTION CODE */
+	#projects {
+		color: white;
+/*		text-align: center;*/
+		padding-top: 75px;
+/*
+		padding-left: 400px;
+		padding-right: 400px;
+*/
+		padding-bottom: 85px;
+
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#385b77+0,000000+100 */
+		background: #385b77;
+		/* Old browsers */
+		background: -moz-linear-gradient(top, #385b77 0%, #000000 100%);
+		/* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #385b77 0%, #000000 100%);
+		/* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #385b77 0%, #000000 100%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#385b77', endColorstr='#000000', GradientType=0);
+		/* IE6-9 */
+	}
+
+	#projects h1 {
+			margin-bottom: 25px;
+/*		margin-top: 10px;*/
+	}
+	
+	
+	.card {
+		margin: 10px;
+	}
+
+
+	/* END OF EDUCATION SECTION CODE */
+	/* CONTACT SECTION CODE */
+	/* END OF CONTACT SECTION CODE */
 }
 
-/* SIDENAV STYLING */
-
-#sidenav {
-  margin: 0;
-  position: fixed;
-  width: 300px;
-  height: 100%;
-  background-color: #0B0C10;
-  border-left: 1px solid black;
-  z-index: 99;
-}
-
-#navigation {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 75%;
-  left: 50%;
-  width: 300px;
-}
-
-#main-menu {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  vertical-align: middle;
-}
-
-#info h1 {
-  text-align: center;
-  background-color: #0B0C10;
-  color: white;
-  font-weight: 500;
-}
-
-#profile-pic {
-  width: 200px;
-  height: auto;
-  margin-top: 0;
-  margin: 50px 50px 0px 50px;
-  border-radius: 102.5px;
-  border: 5px solid #E8E8E8;
-}
-
-#main-menu div{
-  display: block;
-  color: white;
-/*  color: #66FCF1;*/
-  background-color: #1F2833;
-  text-align: center;
-  padding: 15px 20px;
-  text-decoration: none;
-  width: auto;
-}
-
-#main-menu div:hover {
-  background-color: #C5C6C7;
-  cursor: pointer;
-}
-
-#main-menu li+li {
-  border-top: 1px solid #0B0C10;
-}
-
-/* END OF SIDENAV STYLING */
-
-/* MAIN CONTENT STYLING */
-
-#content {
-  margin-left: 300px;
-  width: auto;
-  position: relative;
-  overflow: auto;
-}
-
-.section {
-  text-align: left;
-  color: #52658f;
-  margin-bottom: 5px;
-  padding-left: 100px;
-  padding-right: 100px;
-  top: 0;
-  background-color: #E8E8E8;
-}
-
-/* END OF MAIN CONTENT STYLING */
-
-/* ABOUT SECTION */
-
-#about {
-  width: 100%:
-}
-
-#abouttext {
-  float: left;
-  width: 75%;
-}
-
-#about-me {
-
-}
-
-#hobbiesList h3 {
-  width: calc(18.3%);
-}
-
-/* END OF ABOUT SECTION */
-
-/* SKILLS SECTION */
-
-#skills {
-
-}
-
-#languages h3 {
-  width: calc(31.6%);
-}
-
-#software h3 {
-  width: calc(18.3%);
-}
-
-/* END OF SKILLS SECTION */
-
-/* EXPERIENCE SECTION */
-
-#experience {
-
-}
-
-/* END OF EXPERIENCE SECTION */
-
-/* CONTACT SECTION */
-
-#contactsList a {
-  width: calc(23.5%);
-}
-
-#contact h1 {
-  text-align: left;
-}
-
-/* END OF CONTACT SECTION */
-
-/* CONTENT LIST STYLING */
-
-.alist a, .alist h3 {
-  outline: none;
-  text-decoration: none;
-  display: inline-block;
-  margin-right: 1%;
-  text-align: center;
-  line-height: 3;
-  border: 2px solid black;
-  border-radius: 10px;
-}
-
-.alist ul {
-  padding: 0;
-  width: 100%;
-}
-
-.alist li {
-  display: inline;
-}
-
-.alist li:last-child a {
-  margin-right: 0;
-}
-
-/* END OF CONTENT LIST STYLING */
-  
-}
+/* END OF DESKTOP STYLING */
