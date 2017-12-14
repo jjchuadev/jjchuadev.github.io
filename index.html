@@ -1,186 +1,406 @@
 <!DOCTYPE html>
-
 <html lang="">
 
 <head>
-
-	<title>John Chua</title>
-	<meta name="author" content="John Chua">
+	<title>John Chua Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 
 	<!-- San Francisco UI Display Light -->
 	<link href="https://www.fontify.me/wf/fc35ad2f517ae168293a42d7683dfcd3" rel="stylesheet" type="text/css">
 
+	<!-- DevIcon -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
 	<!-- ICON LIBRARY -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- BOOTSTRAP 4.0.0 -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
 
+	<!-- MDB -->
+	<link rel="stylesheet" href="assets/css/mdb.css">
+
+	<!-- CUSTOM CSS -->
 	<link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 
 <body>
 
-	
+	<!-- Main Navigation -->
+	<header id="index">
 
-	<nav class="navbar navbar-inverse navbar-fixed-top bg-inverse ">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-				<a href="#headerSec" class="navbar-brand">John Chua</a>
-			</div>
-			<!-- Collection of nav links and other content for toggling -->
-			<div id="navbarCollapse" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav">
-
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#headerSec" id="homeButton">Home</a></li>
-					<li><a href="research.html">Research</a></li>
-					<li><a href="#about" id="aboutButton">About</a></li>
-					<li><a href="#projects" id="projectsButton">Projects</a></li>
-					<li><a href="#contact" id="contactButton">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-	<div class="content">
-
-		<div class="header" id="headerSec">
-			<img src="assets/pictures/headerbg2.png">
-			<div class="headerText">
-				<h1> HI, I'M JOHN CHUA </h1>
-				<h2> an aspiring web developer and software engineer</h2>
-				<button class="headerButton">GET STARTED</button>
-			</div>
-			<!-- END OF headerText DIV -->
-		</div>
-		<!--  END OF HEADER DIV  -->
-
-		<div class="infoSection" id="about">
-
-			<h1>A LITTLE BIT ABOUT MYSELF</h1>
-			<h2>Here's a quick rundown...</h2>
-			<img src="assets/pictures/profilepic.jpg">
-			<div class="rundown">
-				<p>Name: John Chua</p>
-				<p>Age: 21</p>
-				<p>School: University of Californa, Irvine</p>
-				<p>Major: Computer Science</p>
-				<p>Expected Graduation: June 2018</p>
-				<p>Activities and Societies: Theta Tau (Professional Engineering Fraternity) and Kababayan (Filipino Cultural Club)</p>
-				<p>Interests: Code, design, video games, working out, volleyball </p>
-				<p>Favorites: EDM, TSM, blue, basketball, poké, GoT, Rick and Morty</p>
-
-				<p>I'm just a kid from the big city of LA hoping to one day become an expert web developer and software engineer. My interest in computers and technology started from a young age with playing games and making videos as a hobby. I built my own computer in high school and that is what made me want to pursue a career in Computer Science. I am hoping to expand my knowledge beyond just what I learn in my classes and learning web development is just one of the many steps I'm taking to build my skillset.</p>
-			</div>
-			<!-- END OF RUNDOWN -->
-
-		</div>
-		<!-- END OF ABOUT SECTION -->
-
-		<div class="infoSection" id="projects">
-
-			<h1>Projects</h1>
-
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark rgba(0, 0, 0, 0.7) rgba-black-strong bg-dark text-right fixed-top scrolling-navbar">
 			<div class="container">
-
-				<div class="card" style="width: 25rem;">
-					<img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
-					<div class="card-block">
-						<h4 class="card-title">Forbidden Memories</h4>
-						<p class="card-text">A 2D side scroller I worked on for a video game design class. The user controls a character that has to escape a space ship. They can accomplish this by gaining different power ups on the map and defeating enemies in their path.</p>
-					</div>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item">Unity</li>
-						<li class="list-group-item">C#</li>
-					</ul>
-					<div class="card-block">
-						<a href="#" class="card-link">Card link</a>
-						<a href="#" class="card-link">Another link</a>
+				<a class="navbar-brand scroll" href="#intro" id="nameButton">John Chua</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav ml-auto">
+						<a class="nav-item nav-link" href="#intro" id="homeButton">Home</a>
+						<a class="nav-item nav-link" href="research.html">Research</a>
+						<a class="nav-item nav-link" href="#about-me" id="aboutButton">About</a>
+						<a class="nav-item nav-link" href="#projects" id="projectButton">Projects</a>
+						<a class="nav-item nav-link" href="#contact" id="contactButton">Contact</a>
 					</div>
 				</div>
-
-				<div class="card" style="width: 25rem;">
-					<img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
-					<div class="card-block">
-						<h4 class="card-title">Elevator Simulator</h4>
-						<p class="card-text">A project that utilized multi-threading to simulate five different elevators in a Java program. Threads acted as elevators in the program that were locked and unlocked based on values in a text file to replicate an actual elevator system.</p>
-					</div>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item">Unity</li>
-						<li class="list-group-item">C#</li>
-					</ul>
-					<div class="card-block">
-						<a href="#" class="card-link">Card link</a>
-						<a href="#" class="card-link">Another link</a>
-					</div>
-				</div>
-
-				<div class="card" style="width: 25rem;">
-					<img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
-					<div class="card-block">
-						<h4 class="card-title">MapQuest GPS</h4>
-						<p class="card-text">A navigation tool I built using the MapQuest API to provide navigation information. The project could display step-by-step directions for multiple destinations along any given route. Other information includes total distance, trip time, lattitude and longitude.</p>
-					</div>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item">Unity</li>
-						<li class="list-group-item">C#</li>
-					</ul>
-					<div class="card-block">
-						<a href="#" class="card-link">Card link</a>
-						<a href="#" class="card-link">Another link</a>
-					</div>
-				</div>
-
-				<div class="card" style="width: 25rem;">
-					<img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
-					<div class="card-block">
-						<h4 class="card-title">Othello</h4>
-						<p class="card-text">A replication of the popular game Othello. The project included two different ways to display and play the game. The first was a console-based UI that relied on input text by the user to play. The second was a GUI created using tkinter which relied on mouse clicks to play.</p>
-					</div>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item">Unity</li>
-						<li class="list-group-item">C#</li>
-					</ul>
-					<div class="card-block">
-						<a href="#" class="card-link">Card link</a>
-						<a href="#" class="card-link">Another link</a>
-					</div>
-				</div>
-
 			</div>
+		</nav>
+		<!-- Navbar -->
 
+		<!-- Mask -->
+		<div id="intro" class="view">
+
+			<div class="container-fluid full-bg-img d-flex justify-content-center">
+				<div class="row d-flex justify-content-center">
+					<div class="col-md-12 text-center">
+						<br><br><br><br><br><br>
+
+						<!-- Header -->
+						<h2 class="display-3 font-bold white-text mb-2">
+							HI, I'M JOHN CHUA
+						</h2>
+
+						<!-- Divider -->
+						<hr class="hr-light">
+
+						<!-- Description -->
+						<h4 class="white-text my-4">
+							an aspiring web developer and software engineer
+						</h4>
+
+						<!-- Get Started -->
+						<button type="button" class="btn btn-outline-white btn-rounded waves-effect" id="startButton" href="about-me">GET STARTED</button>
+
+					</div>
+				</div>
+			</div>
 		</div>
-		<!-- END OF PROJECTS SECTION -->
+		<!-- Mask -->
 
-		<footer class="page-footer indigo center-on-small-only pt-0">
+	</header>
+	<!-- Main Navigation -->
 
-		</footer>
-		<!--  END OF CONTACT DIV  -->
+	<!-- Main Content -->
+	<main class="mt-5">
 
-	</div>
-	<!--  END OF CONTENT DIV  -->
+		<div class="container">
+
+			<!-- Section: About Me -->
+			<section id="about-me" class="text-center">
+
+				<!-- Heading -->
+				<h1 class="mb-4">About Me</h1>
+
+				<!-- Grid Row -->
+				<div class="row d-flex justify-content-center mb-4">
+
+					<!-- Grid Column -->
+					<div class="col-md-12">
+
+						<!-- Picture -->
+						<img src="assets/pictures/profilepic.jpg" class="img-fluid z-depth-2 rounded-circle" alt="Responsive image" id="profilePic">
+
+					</div>
+					<!-- Grid Column -->
+
+				</div>
+				<!-- Grid Row -->
+
+				<!-- Grid Row -->
+				<div class="row mb-5">
+
+					<!-- Grid Column -->
+					<div class="col-md-4">
+						<i class="fa fa-map-marker fa-3x blue-text"></i>
+						<h4 class="my-4">Origins</h4>
+						<p>I was born in Quezon City, Philippines and moved to Los Angeles, CA at a very young age. I have always had an interest in technology and computers, mainly due to being addicted to video games as a kid. Building my own computer in high school is what led me to pursue a career in technology!</p>
+					</div>
+					<!-- Grid Column -->
+
+					<!-- Grid Column -->
+					<div class="col-md-4">
+						<i class="fa fa-graduation-cap fa-3x purple-text"></i>
+						<h4 class="my-4">Education</h4>
+						<p>I am currently a fourth year at the University of California, Irvine majoring in Computer Science. I have learned a lot of things about myself and about programming during my time here, and I am looking for a project that I can be passionate about where I can apply all that I've learned!</p>
+					</div>
+					<!-- Grid Column -->
+
+					<!-- Grid Column -->
+					<div class="col-md-4">
+						<i class="fa fa-gamepad fa-3x blue-text"></i>
+						<h4 class="my-4">Interests</h4>
+						<p>My very first interest in life was playing video games and that is still one of my favorite hobbies. However, over the years I have grown a love for sports like basketball, volleyball, and training in the gym. These are my favorite things to do in my free time and I don't plan on stopping anytime soon!</p>
+					</div>
+					<!-- Grid Column -->
+
+				</div>
+				<!-- Grid Row -->
+
+			</section>
+			<!-- Section: About Me -->
+
+			<hr class="mb-5">
+
+			<!-- Section: Projects -->
+			<section id="projects">
+
+				<!-- Heading -->
+				<h1 class="mb-4 text-center">Projects</h1>
+
+				<br>
+
+				<!-- Grid Row -->
+				<div class="row">
+
+					<!-- Grid Column -->
+					<div class="col-md-4">
+
+						<!-- Picture -->
+						<div class="view overlay hm-zoom">
+							<img src="assets/pictures/projects/forbidden_memories.png" class="img-fluid z-depth-2 projectPic img-thumbnail" alt="Responsive image">
+							<div class="mask flex-center waves-effect waves-light">
+								<h3 class="white-text">Link to GitHub Repo</h3>
+							</div>
+						</div>
+
+					</div>
+					<!-- Grid Column -->
+
+					<!-- Grid Column -->
+					<div class="col-md-8">
+
+						<br>
+
+						<h5 class="mb-1 deep-orange-text font-weight-bold">
+
+							Forbidden Memories -
+							<i class="fa fa-code mr-2"></i><strong>Unity, C#</strong>
+
+						</h5>
+
+						<p>A 2D side-scroller I worked on with a group for a video game design class. The game was developed using Unity with the scripts being written in C#. The main goal of making this game was to learn the game development process which includes much more than just coding (e.g. design documents, marketing, story telling). I worked on enabling the functionality of memory chips, collectable objects within the game that helped to tell the main storyline. I also worked on collecting different sound assets for the game and helped write most of the game design document as well.</p>
+
+					</div>
+					<!-- Grid Column -->
+
+				</div>
+				<!-- Grid Row -->
+
+				<br>
+
+				<!-- Grid Row -->
+				<div class="row">
+
+					<!-- Grid Column -->
+					<div class="col-md-4">
+
+						<!-- Picture -->
+						<a href="https://github.com/jjchuaUCI/jjchuaUCI.github.io" target="_blank">
+							<div class="view overlay hm-zoom">
+								<img src="assets/pictures/projects/website.jpg" class="img-fluid z-depth-2 projectPic img-thumbnail" alt="Responsive image">
+								<div class="mask flex-center waves-effect waves-light">
+									<h3 class="white-text">Go to GitHub Repo</h3>
+								</div>
+							</div>
+						</a>
+
+					</div>
+					<!-- Grid Column -->
+
+					<!-- Grid Column -->
+					<div class="col-md-8">
+
+						<br>
+
+						<h5 class="mb-1 indigo-text font-weight-bold">
+
+							Portfolio Website -
+							<i class="fa fa-code mr-2"></i><strong>HTML, CSS, JavaScript, Bootstrap</strong>
+
+						</h5>
+
+						<p>This website is something I built to get my feet wet with different web development tools and frameworks. While I have had experience with HTML and CSS in the past, this is my first time adding functionality using JavaScript and libraries such as jQuery. This is also my first time using a framework like Bootstrap to enhance the site. I conducted a lot of research such as a competitor analysis, user interviews, and a feature value matrix prior to creating this site. I also performed user tests after building it so that I could learn which parts and features to expand upon as well as which elements to remove.</p>
+
+					</div>
+					<!-- Grid Column -->
+
+				</div>
+				<!-- Grid Row -->
+
+				<br>
+
+				<!-- Grid Row -->
+				<div class="row">
+
+					<!-- Grid Column -->
+					<div class="col-md-4">
+
+						<!-- Picture -->
+						<a href="https://github.com/jjchuaUCI/MapQuestConsole" target="_blank">
+							<div class="view overlay hm-zoom">
+								<img src="assets/pictures/projects/mapquest.png" class="img-fluid z-depth-2 projectPic img-thumbnail" alt="Responsive image">
+								<div class="mask flex-center waves-effect waves-light">
+									<h3 class="black-text">Go to GitHub Repo</h3>
+								</div>
+							</div>
+						</a>
+
+					</div>
+					<!-- Grid Column -->
+
+					<!-- Grid Column -->
+					<div class="col-md-8">
+
+						<br>
+
+						<h5 class="mb-1 blue-text font-weight-bold">
+
+							MapQuest Console -
+							<i class="fa fa-code mr-2"></i><strong>Python</strong>
+
+						</h5>
+
+						<p>A navigation tool I built using the MapQuest API to provide navigation information. The project could display step-by-step directions for multiple destinations along any given route. The user can also view trip distance, total time, and lattitude and longitude. The program first prompts the user for the destinations and the information they want to display, then prints out the navigation instructions based on what they selected. The main learning point of this project was how to use APIs to access information. I also learned how to parse JSON files and how to write code using object oriented programming. </p>
+
+					</div>
+					<!-- Grid Column -->
+
+				</div>
+				<!-- Grid Row -->
+
+			</section>
+
+			<hr class="my-5">
+
+			<!-- Section: Skills -->
+			<section id="skills">
+
+				<!-- Heading -->
+				<h1 class="mb-4 text-center">Technical Skills</h1>
+
+				<h4 class="text-center red-text font-italic">Languages and Frameworks</h4>
+				<br>
+				<h4 class="text-center">
+					<i class="fa-4x devicon-python-plain-wordmark"></i>
+					<i class="fa-4x devicon-cplusplus-plain-wordmark"></i>
+					<i class="fa-4x devicon-csharp-plain-wordmark"></i>
+					<i class="fa-4x devicon-java-plain-wordmark"></i>
+					<i class="fa-4x devicon-html5-plain-wordmark"></i>
+					<i class="fa-4x devicon-css3-plain-wordmark"></i>
+					<i class="fa-4x devicon-javascript-plain"></i>
+					<i class="fa-4x devicon-bootstrap-plain-wordmark"></i>
+				</h4>
+				<br>
+				<h4 class="text-center orange-text font-italic">Software</h4>
+				<br>
+				<h4 class="text-center">
+					<i class="fa-4x devicon-github-plain-wordmark"></i>
+					<i class="fa-4x devicon-photoshop-plain"></i>
+					<i class="fa-4x devicon-slack-plain"></i>
+					<i class="fa-4x devicon-trello-plain"></i>
+				</h4>
+
+			</section>
+			<hr class="my-5">
+		</div>
+
+	</main>
+	<!-- Main Content -->
 
 
-	<!-- SCRIPTS -->
-	<script src="/assets/js/jquery-3.2.1.js"></script>
-	<script src="/assets/js/menu.js"></script>
-	<script src="/assets/js/elementFadeIn.js"></script>
-	<script src="/assets/js/pagescroller.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!--Footer-->
+	<footer class="page-footer indigo darken-4 center-on-small-only pt-0 mt-5" id="contact">
+
+		<!--Footer Links-->
+		<div class="container">
+
+			<!--First row-->
+			<div class="row">
+
+				<!--First column-->
+				<div class="col-md-12">
+
+					<div class="footer-socials mb-5 flex-center">
+
+						<!--Facebook-->
+						<a class="icons-sm" href="https://www.facebook.com/jjchua20" target="_blank"><i class="fa fa-facebook fa-lg white-text mr-md-4"> </i></a>
+						<!--Email-->
+						<a class="icons-sm" data-toggle="modal" data-target="#modalPush"><i class="fa fa-envelope fa-lg white-text mr-md-4"> </i></a>
+						<!--GitHub-->
+						<a class="icons-sm" href="https://github.com/jjchuaUCI" target="_blank"><i class="fa fa-github fa-lg white-text mr-md-4"> </i></a>
+						<!--Linkedin-->
+						<a class="icons-sm" href="https://www.linkedin.com/in/johnjchua/" target="_blank"><i class="fa fa-linkedin fa-lg white-text mr-md-4"> </i></a>
+						<!--Resume-->
+						<a class="icons-sm" href="assets/resume.pdf" target="_blank"><i class="fa fa-file-text fa-lg white-text"> </i></a>
+					</div>
+				</div>
+				<!--/First column-->
+			</div>
+			<!--/First row-->
+		</div>
+		<!--/Footer Links-->
+
+		<!--Copyright-->
+		<div class="footer-copyright">
+			<div class="container-fluid">
+				© 2017 Copyright: <a href="https://jjchuauci.github.io/" target="_blank"> John Chua </a>
+			</div>
+		</div>
+		<!--/Copyright-->
+
+		<!--Modal: modalPush-->
+		<div class="modal fade " id="modalPush" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-notify modal-info rgba-red-strong" role="document">
+				<!--Content-->
+				<div class="modal-content text-center ">
+					<!--Header-->
+					<div class="modal-header d-flex justify-content-center">
+						<p class="heading">Send me an email!</p>
+					</div>
+
+					<!--Body-->
+					<div class="modal-body ">
+
+						<i class="fa fa-google fa-4x animated rotateIn mb-4 "></i>
+
+						<h2>jjchuadev@gmail.com</h2>
+
+					</div>
+
+					<!--Footer-->
+					<div class="modal-footer flex-center">
+						<a href="mailto:jjchuadev@gmail.com"><button class="btn btn-primary-modal">Open Mail app</button></a>
+					</div>
+				</div>
+				<!--/.Content-->
+			</div>
+		</div>
+		<!--Modal: modalPush-->
+
+	</footer>
+	<!--/Footer-->
+
+	<!-- Net Neutrality Script -->
+<!--	<script src="https://widget.battleforthenet.com/widget.js" async></script>-->
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+
+	<!-- Page Scroller -->
+	<script type="text/javascript" src="assets/js/pageScroller.js"></script>
+
+	<!-- Popper.js -->
+	<script type="text/javascript" src="assets/js/popper.min.js"></script>
+
+	<!-- Bootstrap Core JS -->
+	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+	<!-- MDB Core JS -->
+	<script type="text/javascript" src="assets/js/mdb.js"></script>
 
 </body>
 

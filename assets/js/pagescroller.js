@@ -4,37 +4,64 @@
 
 $(document).ready(function () {
   
-  $("#homeButton").click(function() {
+  $("#homeButton").on("click", function() {
     $('html, body').animate({
-        scrollTop: $("#headerSec").offset().top
+        scrollTop: $("#intro").offset().top
+    }, 1000);
+  });
+	
+	$("#nameButton").on("click", function() {
+    $('html, body').animate({
+        scrollTop: $("#intro").offset().top
     }, 1000);
   });
  
   
-  $("#aboutButton").click(function() {
+  $("#aboutButton").on("click", function() {
     $('html, body').animate({
-        scrollTop: $("#about").offset().top
+        scrollTop: $("#about-me").offset().top - 100
+    }, 1000);
+  });
+	
+	$("#startButton").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#about-me").offset().top - 100
     }, 1000);
   });
   
-  $("#educationButton").click(function() {
+  $("#projectButton").on("click", function() {
     $('html, body').animate({
-        scrollTop: $("#education").offset().top
+        scrollTop: $("#projects").offset().top - 100
     }, 1000);
   });
   
-  $("#projectsButton").click(function() {
+  $("#contactButton").on("click", function() {
     $('html, body').animate({
-        scrollTop: $("#projects").offset().top
+        scrollTop: $("#contact").offset().top - 100
     }, 1000);
   });
-  
-  $("#contactButton").click(function() {
+	
+	$("#researchButton").on("click", function() {
     $('html, body').animate({
-        scrollTop: $("#contact").offset().top
+        scrollTop: $("#userResearch").offset().top - 100
     }, 1000);
   });
-  
-  
-  
+	
+	$("#testingButton").on("click", function() {
+    $('html, body').animate({
+        scrollTop: $("#userTesting").offset().top - 100
+    }, 1000);
+  });
+	
+	$("#summaryButton").on("click", function() {
+    $('html, body').animate({
+        scrollTop: $("#summary").offset().top - 100
+    }, 1000);
+  });
+	
+	$("#incorporationButton").on("click", function() {
+    $('html, body').animate({
+        scrollTop: $("#incorporation").offset().top - 100
+    }, 1000);
+  });
 });
