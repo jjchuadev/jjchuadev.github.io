@@ -1,4 +1,4 @@
-# jjchuaUCI.github.io
+# jjchuadev.github.io
 Personal Portfolio Website
 
 My personal portfolio website built using HTML, CSS, JavaScript with help from Bootstrap and MDB.
