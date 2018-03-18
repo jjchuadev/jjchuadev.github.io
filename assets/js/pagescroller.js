@@ -7,13 +7,11 @@ $(document).ready(function () {
       scrollTop: $('#intro').offset().top,
     }, 1000);
   });
-
   $('#nameButton').on('click', function () {
     $('html, body').animate({
       scrollTop: $('#intro').offset().top,
     }, 1000);
   });
-
   $('#aboutButton').on('click', function () {
     $('html, body').animate({
       scrollTop: $('about-me').offset().top - 100,
